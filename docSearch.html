@@ -8,18 +8,27 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="docSearch.php" method="post">
-        Search: <input type="text" name="search">
-
-        Criteria: <select name="column" id="">
-            <option value="docid">Doctor ID</option>
-            <option value="fname">First Name</option>
-            <option value="lname">Last Name</option>
-            <option value="primary_field">Primary Field</option>
-            <option value="hours_worked">Hours Worked</option>
-        </select><br>
-
-        <input type="submit">
-    </form>
+    <div class="container">
+    <div class="center-block">
+		<h1>Search For Medical Staff</h1>
+    	<form action="docSearch.php" method="post">
+    	    <div class="form-group">
+    	    	Search: <input type="text" name="search">
+    	    </div>
+    	
+    	    <div class="form-group">
+    	    	Criteria: <select name="column" id="">
+    	    	    <option value="docid">Doctor ID</option>
+    	    	    <option value="fname">First Name</option>
+    	    	    <option value="lname">Last Name</option>
+    	    	    <option value="primary_field">Primary Field</option>
+    	    	    <option value="hours_worked">Hours Worked</option>
+    	    	</select><br>
+    	    </div>
+    	
+    	    <input class="btn" type="submit">
+    	</form>
+    </div>
+    </div>
 </body>
 </html>

@@ -8,18 +8,26 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="recordSearch.php" method="post">
-       
-        Criteria: <select name="column" id="">
-            <option value="pid">Patient ID</option>
-            <option value="encounterid">Encounter ID</option>
-            <option value="docid">Doc ID</option>
-            <option value="date">Date</option>
-            <option value="diagnosis">Diagnosis</option>
-            <option value="treatment">Treatment</option>
-        </select><br>
-        Search: <input type="text" name="search">
-        <input type="submit">
-    </form>
+    <div class="container">
+    <div class="center-block">
+    	<div class="form-group">
+			<h1>Medical Record Search</h1>
+    		<form action="recordSearch.php" method="post">
+    		   
+    		    Criteria: <select name="column" id="">
+    		        <option value="pid">Patient ID</option>
+    		        <option value="encounterid">Encounter ID</option>
+    		        <option value="docid">Doc ID</option>
+    		        <option value="date">Date</option>
+    		        <option value="diagnosis">Diagnosis</option>
+    		        <option value="treatment">Treatment</option>
+    		    </select><br>
+				<br>
+    		    Search: <input type="text" name="search">
+    	</div>
+    	    <input class="btn" type="submit">
+    	</form>
+    </div>
+    </div>
 </body>
 </html>
