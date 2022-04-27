@@ -7,17 +7,17 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Add/Delete Medical Staff</h1>  
-    <form action="doc_add.php" method="post">
+    <h1>Add/Delete Medical Record</h1>  
+    <form action="record_add.php" method="post">
         Status: <select name="status" id="">
-            <option value="INSERT">Add Medical Staff</option>
-            <option value="DELETE">Remove Medical Staff</option>
+            <option value="INSERT">Add Medical Record</option>
+            <option value="DELETE">Remove Medical Record</option>
         </select>
-        <input value="pid">Patient ID</option>
-        <input value="docid">Doc ID</option>
-        <input value="date">Date</option>
-        <input value="diagnosis">Diagnosis</option>
-        <input value="treatment">Treatment</option>
+        <input name="pid">Patient ID</option>
+        <input name="docid">Doc ID</option>
+        <input name="date">Date</option>
+        <input name="diagnosis">Diagnosis</option>
+        <input name="treatment">Treatment</option>
 
         <input type="submit">
     </form>

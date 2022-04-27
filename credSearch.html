@@ -8,17 +8,16 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="recordSearch.php" method="post">
-       
-        Criteria: <select name="column" id="">
-            <option value="pid">Patient ID</option>
-            <option value="encounterid">Encounter ID</option>
-            <option value="docid">Doc ID</option>
-            <option value="date">Date</option>
-            <option value="diagnosis">Diagnosis</option>
-            <option value="treatment">Treatment</option>
-        </select><br>
+    <form action="credSearch.php" method="post">
         Search: <input type="text" name="search">
+
+        Criteria: <select name="column" id="">
+            <option value="cid">Credential ID</option>
+            <option value="fname">First Name</option>
+            <option value="lname">Last Name</option>
+            <option value="certification">Credential</option>
+        </select><br>
+
         <input type="submit">
     </form>
 </body>

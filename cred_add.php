@@ -2,15 +2,15 @@
 include("database.php");
 
 $status = $_POST['status'];
-$firstname = $_POST['fname'];
-$lastname = $_POST['lname'];
-$ssn = $_POST['SSN'];
+$fname = $_POST['fname'];
+$lname = $_POST['lname'];
+$cred = $_POST['certification'];
 
 if ($status == "INSERT"){
-    $sql = "INSERT INTO PATIENTS (fname, lname, SSN) VALUES ('$firstname', '$lastname', '$ssn')";
+    $sql = "INSERT INTO CREDENTIALS (fname, lname, certification) VALUES ('$fname', '$lname', '$cred')";
 }
 elseif ($status == "DELETE") {
-    $sql = "DELETE FROM PATIENTS WHERE fname like '%$firstname%' and lname like '%$lastname%'";
+    $sql = "DELETE FROM CREDENTIALS WHERE fname like '%$fname%' and lname like '%$lname%' and certification like '%$cred%'";
 }
 else{
     echo "action failed...";

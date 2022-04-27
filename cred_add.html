@@ -7,18 +7,20 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Add/Delete Patients</h1>  
-    <form action="patient_add.php" method="post">
+    <h1>Add/Delete Credentials</h1>  
+    <form action="cred_add.php" method="post">
         Status: <select name="status" id="">
-            <option value="INSERT">Add Patient</option>
-            <option value="DELETE">Remove Patient</option>
+            <option value="INSERT">Add Credential</option>
+            <option value="DELETE">Remove Credential</option>
         </select>
+        Credential ID
+        <input type="text" name="cid">
         First Name
         <input type="text" name="fname">
         Last Name
         <input type="text" name="lname">
-        SSN
-        <input type="text" name="SSN">
+        Credential
+        <input type="text" name="certification">
 
         <input type="submit">
     </form>
