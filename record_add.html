@@ -4,22 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"> 
     <title>Document</title>
 </head>
 <body>
-    <h1>Add/Delete Medical Record</h1>  
-    <form action="record_add.php" method="post">
-        Status: <select name="status" id="">
-            <option value="INSERT">Add Medical Record</option>
-            <option value="DELETE">Remove Medical Record</option>
-        </select>
-        <input name="pid">Patient ID</option>
-        <input name="docid">Doc ID</option>
-        <input name="date">Date</option>
-        <input name="diagnosis">Diagnosis</option>
-        <input name="treatment">Treatment</option>
+    <div class="container">
+    <div class="center-block">
+    	<h1>Add/Delete Medical Record</h1>  
+    	<div class="form-group">
+    		<form class="form-horizontal" action="record_add.php" method="post">
+    		    Status: <select name="status" id="">
+    		        <option value="INSERT">Add Medical Record</option>
+    		        <option value="DELETE">Remove Medical Record</option>
+    		    </select>
 
-        <input type="submit">
-    </form>
+    		    <input class="form-control" name="pid" placeholder="Patient ID">
+    		    <input class="form-control" name="docid" placeholder="Doc ID">
+    		    <input class="form-control" name="date" placeholder="date">
+    		    <input class="form-control" name="diagnosis" placeholder="Diagnosis">
+    		    <input class="form-control" name="treatment" placeholder="Treatment">
+    	</div>
+    	
+    	    <input class="btn" type="submit">
+    	</form>
+    </div>
+    </div>
 </body>
 </html>

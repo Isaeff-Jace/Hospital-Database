@@ -8,17 +8,24 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="credSearch.php" method="post">
-        Search: <input type="text" name="search">
-
-        Criteria: <select name="column" id="">
-            <option value="cid">Credential ID</option>
-            <option value="fname">First Name</option>
-            <option value="lname">Last Name</option>
-            <option value="certification">Credential</option>
-        </select><br>
-
-        <input type="submit">
-    </form>
+    <div class="container">
+    <div class="center-block">
+		<h1>Credential Search</h1>
+    	<form action="credSearch.php" method="post">
+    	    <div class="form-group">
+    	    	Search: <input type="text" name="search">
+    	    	
+    	    	Criteria: <select name="column" id="">
+    	    	    <option value="cid">Credential ID</option>
+    	    	    <option value="fname">First Name</option>
+    	    	    <option value="lname">Last Name</option>
+    	    	    <option value="certification">Credential</option>
+    	    	</select><br>
+    	    </div>
+    	
+    	    <input class="btn" type="submit">
+    	</form>
+    </div>
+    </div>
 </body>
 </html>
