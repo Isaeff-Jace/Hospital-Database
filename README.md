@@ -1,4 +1,5 @@
 Hawks Programming Project - Hospital Database
+Authored by: Jace Isaeff, Trace LaFrenz, Luis Garza
 
 Running the software:
 	1. Start up MySQL on the local machine.
